@@ -1,0 +1,5 @@
+version: 0.0
+os: linux
+files:
+  - source: ./picalculatorwebservice-0.0.3-SNAPSHOT.jar
+    destination: /tmp
