@@ -12,6 +12,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
+      - echo Package generated on `date`
 artifacts:
   files:
     - target/picalculatorwebservice-0.0.3-SNAPSHOT.jar
