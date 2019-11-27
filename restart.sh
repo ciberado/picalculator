@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "`date` shutting down previous server." >> /home/ec2-user/restart.log
 curl -X POST localhost:8080/shutdown
 sleep 10
-java -jar /home/ec2-user/picalculatorwebservice-0.0.3-SNAPSHOT.jar > /home/ec2-user/app.log &
+echo "`date` starting new server." >> /home/ec2-user/restart.log
+java -jar /home/ec2-user/picalculatorwebservice-0.0.3-SNAPSHOT.jar &
