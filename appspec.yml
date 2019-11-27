@@ -3,6 +3,8 @@ os: linux
 files:
   - source: ./picalculatorwebservice-0.0.3-SNAPSHOT.jar
     destination: /home/ec2-user
+  - source: ./restart.sh
+    destination: /home/ec2-user
 hooks:
   ApplicationStart:
     - location: /home/ec2-user/restart.sh
