@@ -16,5 +16,6 @@ phases:
 artifacts:
   files:
     - target/picalculatorwebservice-0.0.3-SNAPSHOT.jar
+    - restart.sh
     - appspec.yml
   discard-paths: yes
